@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/config.js" defer></script>
     <script src="scripts/script.js" defer></script>
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>
+        <h1 class="archivo-black-regular">
             To-Do List
         </h1>
     </header>
-    <main>
+    <mai class="montserrat">
         <div class="todo-container">
             <div class="input-section">
-                <input type="checkbox" id="select-all" name="select-all"> Select All
+                <input type="checkbox" id="select-all" name="select-all"> Tout sélectionner
                 <input type="text" id="todo-input" placeholder="Add a new task...">
-                <button id="add-button">Add</button>
-                <button id="clear-button">Clear</button>
+                <button id="add-button">Ajouter</button>
+                <button id="clear-button" class="delete">Supprimer</button>
             </div>
             <ul id="todo-list">
                 <!-- To-Do items will be dynamically added here -->
@@ -29,7 +32,7 @@
     </main>
     <footer>
         <p>
-            &copy; 2025 ThornedN. All rights reserved.
+            &copy; 2025 ThornedN. Ce projet est à moi, ne le vole pas XDD
         </p>
 
     </footer>

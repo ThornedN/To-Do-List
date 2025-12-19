@@ -8,11 +8,10 @@ h1{
 html, body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #293332;
     color: white;
+    background-color: Black;
     
-    background: linear-gradient(#29CCC4, #293332);
+    
 }
 
 body{
@@ -22,12 +21,60 @@ body{
     align-items: center;
     justify-content: center;
     font-size: xx-large;
+    background: linear-gradient(#22F0C1, #1D6E51, Black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
 
 }
 
 footer{
 
-    margin-top: 350px;
+    margin-top: 475px;
+    padding: auto;
 
 }
+
+input{
+
+    font-family: Montserrat, sans-serif;
+    border: #009d90;
+    border-radius: 5px;
+
+
+}
+
+button{
+
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    background-color: #22F0C0;
+    color: azure;
+    border-color:  #ffffff;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: groove;
+
+}
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.delete{
+
+    background-color: rgb(255, 122, 122);
+
+}
+
