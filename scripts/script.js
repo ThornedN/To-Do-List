@@ -3,6 +3,8 @@ let selectAllButton = document.getElementById("select-all");
 let clearButton = document.getElementById("clear-button");
 
 selectAllButton.checked = false;
+
+
 function clearSelections() {
     // Remove only checked items
     let items = todoList.querySelectorAll("li");
@@ -30,14 +32,17 @@ selectAllButton.addEventListener("click", function() {
     });
 });
 
+
 addButton.addEventListener("click", function() {
     let todoText = todoInput.value.trim();
     if (todoText !== "") {
         // Create a list item with a checkbox and visible text
+        
         let listItem = document.createElement("li");
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.className = "todo-checkbox";
+        
         // Make the text visible by using a span/label element
         let label = document.createElement("span");
         label.className = "todo-text";

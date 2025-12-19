@@ -1,15 +1,53 @@
+@media screen and (max-width: 1200px) {
+    body{
+        font-size: small;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #todo-list li{
+        font-size: smaller;
+        flex-direction: column;
+    }
+    .input-section{
+        font-size: smaller;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: auto;
+    }
+
+    h1{
+        font-size: smaller;
+        flex-direction: column;
+    }
+}
+
 h1{
     text-align: center;
+    align-items: center;
+    margin: auto;
+    gap:50px;
+    justify-content: center;
     font-family: 'Segoe UI Variable', sans-serif;
-    font-size: 75px;
+    font-size: 100px;
     text-shadow: 0 0 15px white;
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 700px;
+    border-radius: 20px;
 }
 
 html, body{
     margin: 0;
     padding: 0;
     color: white;
-    background-color: Black;
+    background-color: #000000;
     
     
 }
@@ -21,7 +59,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: xx-large;
-    background: linear-gradient(#22F0C1, #1D6E51, Black);
+    background: linear-gradient(#ffffff, #b3b3b3, #000000);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,18 +69,43 @@ body{
 
 footer{
 
-    margin-top: 475px;
+    margin-top: 185px;
     padding: auto;
 
 }
 
-input{
-
+/* Only style text inputs globally. Avoid affecting checkboxes and radio buttons. */
+input[type="text"]{
     font-family: Montserrat, sans-serif;
     border: #009d90;
     border-radius: 5px;
+    height: 40px;
+    padding: 0 0.75rem;
+}
 
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
 
+#todo-list li{
+    list-style: none;
+    margin: 0.4rem 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    background-size: auto;
+    border-radius: 1px;
+    width: 600px;
+    height: 20px;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bold;
+
+    
 }
 
 button{
@@ -55,13 +118,16 @@ button{
     border-radius: 10px;
     border-width: 3px;
     border-style: groove;
+    width: 150px;
+    height: 50px;
+    font-size: x-large;
 
 }
 
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
-  font-size: large;
+  font-size: x-large;
   font-weight: normal;
   font-style: normal;
 }
@@ -75,6 +141,28 @@ button{
 .delete{
 
     background-color: rgb(255, 122, 122);
+    margin: auto;
+    width: 700px;
 
 }
 
+.input-section{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1rem;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: auto;
+    height: 75px;
+    margin-bottom: 20px;
+
+}
+
+.select-all{
+    width: 30px;
+}
